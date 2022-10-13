@@ -1,5 +1,6 @@
 import React from "react";
 import { useAddress, useDisconnect, useMetamask } from "@thirdweb-dev/react";
+/* eslint-disable @next/next/no-img-element */
 
 //smaller screen changes to flex and desktop css grid
 //desktop lg-grid with 10 coloms'
@@ -57,7 +58,7 @@ function NFTDropPage() {
         </header>
         <hr className="my-2 border" />
         {address && (
-            <p className="text-center text-sm text-rose-400">You're logged in with wallet {address.substring(0, 5)}...{address.substring(address.length -5)}</p>
+            <p className="text-center text-sm text-rose-400">You are logged in with wallet {address.substring(0, 5)}...{address.substring(address.length -5)}</p>
         )}
         {/**content */}
         <div className="mt-10 flex flex-1 flex-col items-center space-y-6 text-center lg:justify-center lg:space-y-0">
